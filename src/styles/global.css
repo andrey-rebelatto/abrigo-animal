@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --color-parchment: #f6f1e7;
+  --color-cream: #fbf7ee;
+  --color-terracotta: #c66b3d;
+  --color-coral: #e89575;
+  --color-clay: #8a4b2b;
+  --color-ink: #2e2a26;
+  --color-moss: #6b7a4e;
+  --color-rust: #a8432a;
+
+  /* Font family vars (--font-display, --font-body) are injected by astro:fonts */
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+html {
+  background-color: var(--color-parchment);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-clay);
+}
