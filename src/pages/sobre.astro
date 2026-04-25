@@ -1,0 +1,340 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import fachadaImg from '../assets/fachada-abrigo.jpg';
+---
+
+<Layout
+  title="Sobre o Abrigo | Abrigo Animal Joinville"
+  description="Conheça a história da Associação Abrigo Animal de Joinville. Fundada em 2001 por voluntários, cuidamos de animais abandonados e maltratados há mais de 25 anos."
+>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-10 pb-12 lg:pt-16 lg:pb-20">
+    <div class="mx-auto max-w-3xl flex flex-col gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#6F8B5A] shrink-0"></span>
+        <span class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+              style="font-family: var(--font-body)">Quem somos</span>
+      </div>
+      <h1 class="text-[36px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-5xl"
+          style="font-family: var(--font-display); text-wrap: balance">
+        Uma associação fundada por amor.<br />Desde 2001.
+      </h1>
+      <p class="text-[17px] leading-6.5 text-[#2A332F]/78 max-w-xl"
+         style="font-family: var(--font-body); text-wrap: pretty">
+        Surgimos de voluntários que não conseguiram olhar para o outro lado. Hoje somos uma das principais referências em proteção animal de Joinville — sem fins lucrativos, sem veterinário próprio, 100% movidos a doação e dedicação.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── STATS BAND ────────────────────────────────────────────────────── -->
+  <section class="bg-[#FCFAF3] px-5 py-8 lg:py-12">
+    <div class="mx-auto max-w-7xl">
+      <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A] mb-4"
+         style="font-family: var(--font-body)">Hoje no abrigo</p>
+      <div class="flex gap-8 lg:gap-16 flex-wrap">
+        <div class="flex flex-col gap-1">
+          <span class="text-4xl font-semibold tracking-[-0.02em] text-[#6F8B5A] [font-variant-numeric:tabular-nums]"
+                style="font-family: var(--font-display)">320</span>
+          <span class="text-[13px] leading-4.5 text-[#2A332F]/72"
+                style="font-family: var(--font-body)">animais<br />abrigados</span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-4xl font-semibold tracking-[-0.02em] text-[#3A4A34] [font-variant-numeric:tabular-nums]"
+                style="font-family: var(--font-display)">25+</span>
+          <span class="text-[13px] leading-4.5 text-[#2A332F]/72"
+                style="font-family: var(--font-body)">anos de<br />história</span>
+        </div>
+        <div class="flex flex-col gap-1">
+          <span class="text-4xl font-semibold tracking-[-0.02em] text-[#D1A24C] [font-variant-numeric:tabular-nums]"
+                style="font-family: var(--font-display)">5</span>
+          <span class="text-[13px] leading-4.5 text-[#2A332F]/72"
+                style="font-family: var(--font-body)">colaboradores<br />registrados</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ORIGEM ────────────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-14 pb-12 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-[2fr_3fr] lg:gap-14 lg:items-center">
+      <!-- Foto -->
+      <div class="w-full aspect-video rounded-[20px] mb-8 lg:mb-0 lg:aspect-[4/3] relative overflow-hidden"
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+        <Image src={fachadaImg} alt="Fachada do Abrigo Animal de Joinville, paredes verdes com pegadas pintadas"
+               class="absolute inset-0 w-full h-full object-cover object-center" />
+      </div>
+      <!-- Texto -->
+      <div class="flex flex-col gap-4">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">A história</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Julho de 2001. Voluntários e muita determinação.
+        </h2>
+        <p class="text-base leading-6 text-[#2A332F]/78" style="font-family: var(--font-body)">
+          A Associação Abrigo Animal nasceu em Joinville com um objetivo simples: proteger cães e gatos abandonados e maltratados. Sem estrutura pública, sem veterinário próprio, sem verbas garantidas — só voluntários que não conseguiram fechar os olhos para o sofrimento ao redor.
+        </p>
+        <p class="text-base leading-6 text-[#2A332F]/78" style="font-family: var(--font-body)">
+          Mais de duas décadas depois, somos uma associação registrada, com CNPJ 04.603.573/0001-60, cinco colaboradores e uma casa cheia: cerca de 320 cães e gatos esperando por um lar. A estrutura cresceu. O coração, nunca mudou.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VALORES ───────────────────────────────────────────────────────── -->
+  <section class="bg-[#FCFAF3] px-5 pt-12 pb-10 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-col gap-2 mb-8">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">Como operamos</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Três princípios que guiam tudo.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+
+        <!-- Acolhimento -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-[#F2EFE8] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center justify-center w-12 h-12 rounded-[14px] bg-[#6F8B5A] shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#FCFAF3"/>
+            </svg>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Acolhimento</h3>
+            <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+               style="font-family: var(--font-body)">
+              Todo animal que chega recebe vacinação, vermifugação e acompanhamento de saúde — antes mesmo de ser disponibilizado para adoção.
+            </p>
+          </div>
+        </div>
+
+        <!-- Castração -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-[#F2EFE8] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center justify-center w-12 h-12 rounded-[14px] bg-[#3A4A34] shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M9 11H7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2M9 11V7a3 3 0 0 1 6 0v4M9 11h6" stroke="#FCFAF3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Castração como política</h3>
+            <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+               style="font-family: var(--font-body)">
+              Castração é a palavra-chave para combater o crescimento da população de animais abandonados. Todos os nossos animais são castrados antes da adoção.
+            </p>
+          </div>
+        </div>
+
+        <!-- Transparência -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-[#F2EFE8] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center justify-center w-12 h-12 rounded-[14px] bg-[#D1A24C] shrink-0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="#FCFAF3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="flex flex-col gap-1.5">
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Transparência</h3>
+            <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+               style="font-family: var(--font-body)">
+              Somos uma associação privada sem fins lucrativos, CNPJ 04.603.573/0001-60. Toda doação é registrada e recibo é emitido mediante solicitação.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SUSTENTAÇÃO ───────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-14 pb-12 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-col gap-2 mb-8">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">Como nos sustentamos</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Dois pilares. Nenhum recurso público.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+
+        <!-- Doações -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-7">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#6F8B5A] shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z" fill="#FCFAF3"/>
+              </svg>
+            </div>
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Doações da comunidade</h3>
+          </div>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            PIX, conta bancária, ração, remédios, produtos de limpeza — toda contribuição chega diretamente aos animais. A comunidade de Joinville é o nosso principal financiador.
+          </p>
+          <a href="/ajudar"
+             class="flex items-center gap-1.5 pt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Ver formas de ajudar
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Brechó -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-7">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#3A4A34] shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M7 4V2H17V4H20.007C20.555 4 21 4.445 21 4.993V21.007C21 21.555 20.555 22 20.007 22H3.993C3.445 22 3 21.555 3 21.007V4.993C3 4.445 3.445 4 3.993 4H7ZM7 6H5V20H19V6H17V8H7V6ZM9 4V6H15V4H9Z" fill="#FCFAF3"/>
+              </svg>
+            </div>
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Brechó do Abrigo</h3>
+          </div>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            Anexo ao Abrigo, o Brechó vende roupas e objetos doados pela comunidade. A renda vai integralmente para a manutenção dos animais. Comprar no Brechó é uma forma direta de ajudar.
+          </p>
+          <a href="/contato"
+             class="flex items-center gap-1.5 pt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Ver endereço e horários
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── VOLUNTÁRIOS ───────────────────────────────────────────────────── -->
+  <section class="bg-[#FCFAF3] px-5 pt-12 pb-10 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-3xl flex flex-col gap-6">
+      <div class="flex flex-col gap-2">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">As pessoas por trás</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Profissionais, mães, estudantes.<br />Nenhum recebe por isso.
+        </h2>
+      </div>
+      <p class="text-base leading-6.5 text-[#2A332F]/78" style="font-family: var(--font-body)">
+        O abrigo conta com cinco colaboradores registrados, mas o dia a dia depende de voluntários que doam seu tempo sem remuneração. Profissionais de diferentes áreas, mães que trazem os filhos, estudantes em busca de propósito — cada um que aparece numa tarde de sábado faz diferença real para os 320 animais que moram aqui.
+      </p>
+      <a href="/ajudar"
+         class="flex items-center gap-1.5 text-[15px] font-semibold text-[#6F8B5A] hover:text-[#3A4A34] underline underline-offset-4 decoration-1 transition-colors w-fit"
+         style="font-family: var(--font-body)">
+        Quero ser voluntário
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ─── PROGRAMAS ─────────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-12 pb-10 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-col gap-2 mb-8">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">O que fazemos</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Três frentes de atuação.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+
+        <!-- Adoção -->
+        <div class="flex flex-col gap-3 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-6">
+          <p class="text-xs font-semibold tracking-[0.12em] uppercase text-[#6F8B5A]"
+             style="font-family: var(--font-body)">01</p>
+          <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+              style="font-family: var(--font-display)">Adoção responsável</h3>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            Todos os animais saem vacinados, castrados e vermifugados. Passamos por entrevista e visita domiciliar — não para dificultar, mas para garantir que o vínculo vai durar.
+          </p>
+          <a href="/contato"
+             class="flex items-center gap-1.5 mt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Agendar visita
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Cãofilhado -->
+        <div class="flex flex-col gap-3 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-6">
+          <p class="text-xs font-semibold tracking-[0.12em] uppercase text-[#3A4A34]"
+             style="font-family: var(--font-body)">02</p>
+          <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+              style="font-family: var(--font-display)">Projeto Cãofilhado</h3>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            Para os cães idosos que têm menos chance de adoção, criamos um programa de apadrinhamento. R&nbsp;80/mês garante ração, remédios e presença humana até o fim da vida.
+          </p>
+          <a href="/ajudar"
+             class="flex items-center gap-1.5 mt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Apadrinhar um cão
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- Resgate -->
+        <div class="flex flex-col gap-3 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-6">
+          <p class="text-xs font-semibold tracking-[0.12em] uppercase text-[#D1A24C]"
+             style="font-family: var(--font-body)">03</p>
+          <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+              style="font-family: var(--font-display)">Resgate de emergência</h3>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            Atendemos casos urgentes de animais em situação de maus-tratos ou abandono. Sem equipe de resgate própria — dependemos de voluntários disponíveis e da colaboração da comunidade.
+          </p>
+          <a href="/contato"
+             class="flex items-center gap-1.5 mt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Reportar um caso
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CLOSING CTA ───────────────────────────────────────────────────── -->
+  <section class="bg-[#6F8B5A] px-6 py-14 lg:py-20">
+    <div class="mx-auto max-w-xl flex flex-col gap-5">
+      <h2 class="text-[32px] leading-9 font-semibold tracking-[-0.02em] text-[#FCFAF3] lg:text-5xl"
+          style="font-family: var(--font-display); text-wrap: balance">
+        Você pode fazer<br />parte disso.
+      </h2>
+      <p class="text-base leading-6 text-[#FCFAF3]/86" style="font-family: var(--font-body)">
+        Adotando, apadrinhando, doando ou dedicando uma tarde por mês — qualquer forma de ajuda chega diretamente até os 320 animais que moram aqui.
+      </p>
+      <div class="flex flex-col gap-2.5 pt-2 lg:flex-row">
+        <a href="/ajudar"
+           class="flex justify-center items-center rounded-full py-4 px-7 bg-[#FCFAF3] text-[#2A332F] text-base font-semibold hover:bg-white transition-colors"
+           style="font-family: var(--font-body)">
+          Ver formas de ajudar
+        </a>
+        <button
+          onclick="navigator.share ? navigator.share({title: 'Abrigo Animal', url: location.href}) : undefined"
+          class="flex justify-center items-center rounded-full py-4 px-7 border-[1.5px] border-[#FCFAF3]/48 text-[#FCFAF3] text-base font-medium hover:bg-[#FCFAF3]/10 transition-colors"
+          style="font-family: var(--font-body)">
+          Compartilhar esta página
+        </button>
+      </div>
+    </div>
+  </section>
+
+</Layout>
