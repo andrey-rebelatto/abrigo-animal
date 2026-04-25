@@ -14,13 +14,13 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-[#6F8B5A] shrink-0"></span>
           <span class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
-                style="font-family: var(--font-body)">Procurando um lar</span>
+                style="font-family: var(--font-body)">Quem já encontrou um lar</span>
         </div>
 
         <!-- Headline -->
         <h1 class="text-[40px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-6xl"
             style="font-family: var(--font-display); text-wrap: balance">
-          Esse é o Thor.<br />Ele espera há 4 meses.
+          Esse é o Biscoito.<br />Ficou 3 anos esperando. Hoje tem quintal.
         </h1>
 
         <!-- Foto — mobile only (aparece entre headline e copy) -->
@@ -30,16 +30,16 @@ import Layout from '../layouts/Layout.astro';
             <span class="rounded-full py-1.5 px-3 bg-[#FCFAF3]/92 text-xs font-semibold text-[#2A332F]"
                   style="font-family: var(--font-body)">SRD macho</span>
             <span class="rounded-full py-1.5 px-3 bg-[#FCFAF3]/92 text-xs font-semibold text-[#2A332F]"
-                  style="font-family: var(--font-body)">Porte médio</span>
+                  style="font-family: var(--font-body)">Adotado em 2024</span>
             <span class="rounded-full py-1.5 px-3 bg-[#FCFAF3]/92 text-xs font-semibold text-[#2A332F]"
-                  style="font-family: var(--font-body)">2 anos</span>
+                  style="font-family: var(--font-body)">Joinville</span>
           </div>
         </div>
 
         <!-- Copy -->
         <p class="text-[17px] leading-6.5 text-[#2A332F]/82 lg:text-lg lg:max-w-xl"
            style="font-family: var(--font-body); text-wrap: pretty">
-          Chegou num dia de chuva, magro demais pra subir no carro. Hoje brinca com todo mundo, mas trava na hora de ir pra casa — ele ainda não sabe o que é uma.
+          Ficou três anos esperando. Hoje brinca com as crianças no quintal da Luciana e do Pedro — e já sabe exatamente o que é uma casa.
         </p>
 
         <!-- CTAs -->
@@ -47,7 +47,7 @@ import Layout from '../layouts/Layout.astro';
           <a href="/adote"
              class="flex justify-center items-center rounded-full py-4 px-7 bg-[#2A332F] text-[#FCFAF3] text-base font-semibold hover:bg-[#3A4A34] transition-colors"
              style="font-family: var(--font-body)">
-            Conheça o Thor e os outros
+            Ver quem já encontrou um lar
           </a>
           <a href="/ajudar"
              class="flex justify-center items-center rounded-full py-4 px-7 border-[1.5px] border-[#2A332F]/24 text-[#2A332F] text-base font-medium hover:bg-[#2A332F]/5 transition-colors"
@@ -86,9 +86,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="flex flex-col gap-1">
           <span class="text-4xl font-semibold tracking-[-0.02em] text-[#3A4A34] [font-variant-numeric:tabular-nums]"
-                style="font-family: var(--font-display)">58</span>
+                style="font-family: var(--font-display)">40+</span>
           <span class="text-[13px] leading-4.5 text-[#2A332F]/72"
-                style="font-family: var(--font-body)">esperando<br />um lar</span>
+                style="font-family: var(--font-body)">voluntários<br />ativos</span>
         </div>
         <div class="flex flex-col gap-1">
           <span class="text-4xl font-semibold tracking-[-0.02em] text-[#D1A24C] [font-variant-numeric:tabular-nums]"
@@ -125,12 +125,12 @@ import Layout from '../layouts/Layout.astro';
                 style="font-family: var(--font-display)">Adotar um animal</h3>
             <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
                style="font-family: var(--font-body)">
-              Conheça quem está esperando por uma família. Vacinados e castrados.
+              Venha visitar e encontrar seu companheiro. Todos vacinados e castrados.
             </p>
           </div>
-          <a href="/adote" class="flex items-center gap-2 pt-2 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors"
+          <a href="/contato" class="flex items-center gap-2 pt-2 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors"
              style="font-family: var(--font-body)">
-            Ver animais disponíveis
+            Agendar uma visita
             <span class="w-4 h-4 rounded-sm bg-[#3A4A34]/30 inline-block"></span>
           </a>
         </div>
@@ -402,7 +402,7 @@ import Layout from '../layouts/Layout.astro';
         <a href="/adote"
            class="flex justify-center items-center rounded-full py-4 px-7 bg-[#FCFAF3] text-[#2A332F] text-base font-semibold hover:bg-white transition-colors"
            style="font-family: var(--font-body)">
-          Ver animais disponíveis
+          Ver quem já adotamos
         </a>
         <button onclick="navigator.share ? navigator.share({title: 'Abrigo Animal', url: location.href}) : undefined"
                 class="flex justify-center items-center rounded-full py-4 px-7 border-[1.5px] border-[#FCFAF3]/48 text-[#FCFAF3] text-base font-medium hover:bg-[#FCFAF3]/10 transition-colors"

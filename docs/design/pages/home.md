@@ -6,15 +6,15 @@ Em uma frase: o visitante entende que é um abrigo real de Joinville, sente que 
 
 ## Persona-alvo
 
-- **Primária**: adotante (80% do tráfego segundo a auditoria). Chega buscando "adotar cachorro Joinville" e precisa ver imediatamente que existem animais disponíveis.
+- **Primária**: pessoa interessada em adotar — chega buscando "adotar cachorro Joinville" e precisa sentir que o abrigo é real, com histórias reais de adoção concluída. **Não há catálogo online** de animais disponíveis; o contato é direto com o abrigo para agendar visita.
 - **Secundária**: doador de passagem — geralmente vem do Instagram depois de um post específico, quer um CTA claro de doação sem fricção.
 
 ## CTA primário / secundário
 
-- **Primário**: `Conheça os animais` → `/adote`
+- **Primário**: `Ver quem já encontrou um lar` → `/adote` (página de histórias de adoção)
 - **Secundário**: `Ajudar de outra forma` → `/ajudar`
 
-Hierarquia: adoção resolve o problema do abrigo (menos animais = menos custo). Doação é suporte, vem depois na rolagem.
+Hierarquia: histórias de adoção concluída geram confiança e motivam contato. Quem quer adotar entra em contato direto com o abrigo — não existe catálogo de animais disponíveis no site.
 
 ## Motivação
 
@@ -35,10 +35,10 @@ O que o novo design corrige:
 
 ## Conteúdo obrigatório
 
-- [ ] Hero com 1 animal em destaque: foto, nome, idade, tempo no abrigo, frase curta, CTA primário.
-- [ ] Faixa de estatísticas vivas: adotados, esperando, apadrinhados — 3 números, sem gráficos.
-- [ ] Seção "Como você pode ajudar": 4 cards (Adotar, Apadrinhar, Doar PIX, Voluntariar), cada um com ícone, frase de 1 linha e link.
-- [ ] "Quem já encontrou um lar": carrossel horizontal mobile-first com 3–6 histórias curtas (foto antes/depois + frase da família).
+- [ ] Hero com 1 animal **já adotado** em destaque: foto, nome, data de adoção, frase curta da história, CTA primário.
+- [ ] Faixa de estatísticas: adotados, voluntários ativos, apadrinhados — 3 números, sem gráficos. Não exibir "animais esperando" (implica catálogo).
+- [ ] Seção "Como você pode ajudar": 4 cards (Adotar, Apadrinhar, Doar PIX, Voluntariar), cada um com ícone, frase de 1 linha e link. Card "Adotar" aponta para `/contato` (agendar visita), não para catálogo.
+- [ ] "Quem já encontrou um lar": carrossel horizontal mobile-first com 3–6 histórias curtas (foto antes/depois + frase da família). **Esta é a seção central do site.**
 - [ ] Bloco "Quem somos" resumido: 1 parágrafo + foto + link para `/sobre`.
 - [ ] FAQ rápido: 3 perguntas mais comuns ("Posso visitar?", "Como adoto?", "Vocês atendem fora de Joinville?") com expand/collapse.
 - [ ] Footer institucional (spec no Foundation).
@@ -47,10 +47,10 @@ O que o novo design corrige:
 
 | Estado | Quando aparece | Comportamento |
 |---|---|---|
-| Vazio | Sem animais `available` no CMS | Hero troca para ilustração + CTA vira "Cadastre-se para saber quando tiver animal". Evita página vazia quebrada. |
+| Vazio | Sem histórias de adoção no CMS | Hero usa história estática hardcoded como fallback. Não há estado "sem animais disponíveis". |
 | Carregando | Build estático — não aplicável em produção | Em dev, skeleton da foto do hero com `bg-warm-white` animado. |
 | Erro | Collection falha no build | Build quebra (falha explícita > página viva mentindo). |
-| Sucesso | Default | Hero renderiza com o animal de maior `intakeDate` (mais antigo) entre `available`. |
+| Sucesso | Default | Hero renderiza com o animal adotado mais recentemente (`adoptedAt` desc). |
 
 ## Métricas de sucesso
 
