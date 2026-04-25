@@ -1,5 +1,11 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
+import biscoitoImg from '../assets/biscoito.png';
+import cajuImg from '../assets/caju.png';
+import melImg from '../assets/mel.png';
+import pipocaImg from '../assets/pipoca.png';
+import fachadaImg from '../assets/fachada-abrigo.jpg';
 ---
 
 <Layout title="Abrigo Animal | Joinville SC">
@@ -14,32 +20,34 @@ import Layout from '../layouts/Layout.astro';
         <div class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-[#6F8B5A] shrink-0"></span>
           <span class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
-                style="font-family: var(--font-body)">Procurando um lar</span>
+                style="font-family: var(--font-body)">Quem já encontrou um lar</span>
         </div>
 
         <!-- Headline -->
         <h1 class="text-[40px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-6xl"
             style="font-family: var(--font-display); text-wrap: balance">
-          Esse é o Thor.<br />Ele espera há 4 meses.
+          Esse é o Biscoito.<br />Ficou 3 anos esperando. Hoje tem quintal.
         </h1>
 
         <!-- Foto — mobile only (aparece entre headline e copy) -->
         <div class="lg:hidden relative w-full aspect-[4/4.5] rounded-3xl overflow-hidden"
-             style="background: linear-gradient(160deg in oklab, oklab(74.7% 0.082 0.073) 0%, oklab(62.4% 0.091 0.094) 60%, oklab(51.5% 0.114 0.080) 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+             style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+          <Image src={biscoitoImg} alt="Biscoito, cão malhado rolando na grama feliz após ser adotado"
+                 class="absolute inset-0 w-full h-full object-cover object-center" />
           <div class="absolute bottom-5 left-5 flex gap-2">
             <span class="rounded-full py-1.5 px-3 bg-[#FCFAF3]/92 text-xs font-semibold text-[#2A332F]"
                   style="font-family: var(--font-body)">SRD macho</span>
             <span class="rounded-full py-1.5 px-3 bg-[#FCFAF3]/92 text-xs font-semibold text-[#2A332F]"
-                  style="font-family: var(--font-body)">Porte médio</span>
+                  style="font-family: var(--font-body)">Adotado em 2024</span>
             <span class="rounded-full py-1.5 px-3 bg-[#FCFAF3]/92 text-xs font-semibold text-[#2A332F]"
-                  style="font-family: var(--font-body)">2 anos</span>
+                  style="font-family: var(--font-body)">Joinville</span>
           </div>
         </div>
 
         <!-- Copy -->
         <p class="text-[17px] leading-6.5 text-[#2A332F]/82 lg:text-lg lg:max-w-xl"
            style="font-family: var(--font-body); text-wrap: pretty">
-          Chegou num dia de chuva, magro demais pra subir no carro. Hoje brinca com todo mundo, mas trava na hora de ir pra casa — ele ainda não sabe o que é uma.
+          Ficou três anos esperando. Hoje brinca com as crianças no quintal da Luciana e do Pedro — e já sabe exatamente o que é uma casa.
         </p>
 
         <!-- CTAs -->
@@ -47,7 +55,7 @@ import Layout from '../layouts/Layout.astro';
           <a href="/adote"
              class="flex justify-center items-center rounded-full py-4 px-7 bg-[#2A332F] text-[#FCFAF3] text-base font-semibold hover:bg-[#3A4A34] transition-colors"
              style="font-family: var(--font-body)">
-            Conheça o Thor e os outros
+            Adote seu melhor amigo
           </a>
           <a href="/ajudar"
              class="flex justify-center items-center rounded-full py-4 px-7 border-[1.5px] border-[#2A332F]/24 text-[#2A332F] text-base font-medium hover:bg-[#2A332F]/5 transition-colors"
@@ -59,7 +67,9 @@ import Layout from '../layouts/Layout.astro';
 
       <!-- Foto — desktop only -->
       <div class="hidden lg:block relative w-full aspect-square rounded-3xl overflow-hidden"
-           style="background: linear-gradient(160deg in oklab, oklab(74.7% 0.082 0.073) 0%, oklab(62.4% 0.091 0.094) 60%, oklab(51.5% 0.114 0.080) 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+        <Image src={biscoitoImg} alt="Biscoito, cão malhado rolando na grama feliz após ser adotado"
+               class="absolute inset-0 w-full h-full object-cover object-center" />
         <div class="absolute bottom-6 left-6 flex gap-2">
           <span class="rounded-full py-1.5 px-3 bg-[#FCFAF3]/92 text-xs font-semibold text-[#2A332F]"
                 style="font-family: var(--font-body)">SRD macho</span>
@@ -86,9 +96,9 @@ import Layout from '../layouts/Layout.astro';
         </div>
         <div class="flex flex-col gap-1">
           <span class="text-4xl font-semibold tracking-[-0.02em] text-[#3A4A34] [font-variant-numeric:tabular-nums]"
-                style="font-family: var(--font-display)">58</span>
+                style="font-family: var(--font-display)">40+</span>
           <span class="text-[13px] leading-4.5 text-[#2A332F]/72"
-                style="font-family: var(--font-body)">esperando<br />um lar</span>
+                style="font-family: var(--font-body)">voluntários<br />ativos</span>
         </div>
         <div class="flex flex-col gap-1">
           <span class="text-4xl font-semibold tracking-[-0.02em] text-[#D1A24C] [font-variant-numeric:tabular-nums]"
@@ -125,12 +135,12 @@ import Layout from '../layouts/Layout.astro';
                 style="font-family: var(--font-display)">Adotar um animal</h3>
             <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
                style="font-family: var(--font-body)">
-              Conheça quem está esperando por uma família. Vacinados e castrados.
+              Venha visitar e encontrar seu companheiro. Todos vacinados e castrados.
             </p>
           </div>
-          <a href="/adote" class="flex items-center gap-2 pt-2 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors"
+          <a href="/contato" class="flex items-center gap-2 pt-2 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors"
              style="font-family: var(--font-body)">
-            Ver animais disponíveis
+            Agendar uma visita
             <span class="w-4 h-4 rounded-sm bg-[#3A4A34]/30 inline-block"></span>
           </a>
         </div>
@@ -222,8 +232,9 @@ import Layout from '../layouts/Layout.astro';
         <!-- Card 1 -->
         <article class="flex flex-col w-64 shrink-0 snap-start rounded-[20px] overflow-hidden bg-[#F2EFE8]
                         lg:w-auto lg:shrink lg:snap-align-none">
-          <div class="h-48 shrink-0"
-               style="background: linear-gradient(140deg in oklab, oklab(55.6% -0.037 0.055) 0%, oklab(48.2% 0.067 0.070) 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+          <div class="h-48 shrink-0 relative overflow-hidden">
+            <Image src={melImg} alt="Mel, gatinha preta e branca com gravata borboleta"
+                   class="absolute inset-0 w-full h-full object-cover object-center" />
           </div>
           <div class="flex flex-col gap-2.5 p-5">
             <div class="flex items-center gap-2">
@@ -242,28 +253,30 @@ import Layout from '../layouts/Layout.astro';
         <!-- Card 2 -->
         <article class="flex flex-col w-64 shrink-0 snap-start rounded-[20px] overflow-hidden bg-[#F2EFE8]
                         lg:w-auto lg:shrink lg:snap-align-none">
-          <div class="h-48 shrink-0"
-               style="background: linear-gradient(140deg in oklab, oklab(74.7% 0.082 0.073) 0%, oklab(51.5% 0.114 0.080) 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+          <div class="h-48 shrink-0 relative overflow-hidden">
+            <Image src={cajuImg} alt="Caju, cão preto sentado na grama com a língua de fora"
+                   class="absolute inset-0 w-full h-full object-cover object-center" />
           </div>
           <div class="flex flex-col gap-2.5 p-5">
             <div class="flex items-center gap-2">
               <span class="text-lg font-semibold text-[#2A332F]"
-                    style="font-family: var(--font-display)">Biscoito</span>
+                    style="font-family: var(--font-display)">Caju</span>
               <span class="w-1 h-1 rounded-full bg-[#2A332F]/30 shrink-0"></span>
               <span class="text-[13px] text-[#2A332F]/60" style="font-family: var(--font-body)">adotado em 2024</span>
             </div>
             <p class="text-sm leading-5.25 text-[#2A332F]/76" style="font-family: var(--font-body)">
-              "Ficou três anos no abrigo. Agora brinca com as crianças no quintal."
+              "Chegou tremendo, não deixava ninguém se aproximar. Hoje dorme na cama do meu filho todo dia."
             </p>
-            <p class="text-xs text-[#2A332F]/50" style="font-family: var(--font-body)">— Luciana e Pedro</p>
+            <p class="text-xs text-[#2A332F]/50" style="font-family: var(--font-body)">— Mariana S.</p>
           </div>
         </article>
 
         <!-- Card 3 -->
         <article class="flex flex-col w-64 shrink-0 snap-start rounded-[20px] overflow-hidden bg-[#F2EFE8]
                         lg:w-auto lg:shrink lg:snap-align-none">
-          <div class="h-48 shrink-0"
-               style="background: linear-gradient(140deg in oklab, oklab(62.4% 0.091 0.094) 0%, oklab(28.8% 0.004 0.009) 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+          <div class="h-48 shrink-0 relative overflow-hidden">
+            <Image src={pipocaImg} alt="Pipoca, gata branca com olhos azuis"
+                   class="absolute inset-0 w-full h-full object-cover object-center" />
           </div>
           <div class="flex flex-col gap-2.5 p-5">
             <div class="flex items-center gap-2">
@@ -273,7 +286,7 @@ import Layout from '../layouts/Layout.astro';
               <span class="text-[13px] text-[#2A332F]/60" style="font-family: var(--font-body)">adotada em 2023</span>
             </div>
             <p class="text-sm leading-5.25 text-[#2A332F]/76" style="font-family: var(--font-body)">
-              "Tinha medo de tudo. Hoje late pra carteiro como se sempre tivesse sido dona do lugar."
+              "Tinha medo de tudo. Hoje mia pra carteiro como se sempre tivesse sido dona do lugar."
             </p>
             <p class="text-xs text-[#2A332F]/50" style="font-family: var(--font-body)">— Carolina M.</p>
           </div>
@@ -286,8 +299,10 @@ import Layout from '../layouts/Layout.astro';
   <section class="bg-[#F2EFE8] px-5 pt-12 pb-10 lg:pt-20 lg:pb-16">
     <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-[2fr_3fr] lg:gap-14 lg:items-center">
       <!-- Foto -->
-      <div class="w-full aspect-video rounded-[20px] mb-6 lg:mb-0 lg:aspect-[4/3]"
-           style="background: linear-gradient(160deg in oklab, oklab(48.2% 0.067 0.070) 0%, oklab(28.8% 0.004 0.009) 100%); box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+      <div class="w-full aspect-video rounded-[20px] mb-6 lg:mb-0 lg:aspect-[4/3] relative overflow-hidden"
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+        <Image src={fachadaImg} alt="Fachada do Abrigo Animal de Joinville, paredes verdes com pegadas pintadas"
+               class="absolute inset-0 w-full h-full object-cover object-center" />
       </div>
       <!-- Texto -->
       <div class="flex flex-col gap-4">
@@ -402,7 +417,7 @@ import Layout from '../layouts/Layout.astro';
         <a href="/adote"
            class="flex justify-center items-center rounded-full py-4 px-7 bg-[#FCFAF3] text-[#2A332F] text-base font-semibold hover:bg-white transition-colors"
            style="font-family: var(--font-body)">
-          Ver animais disponíveis
+          Ver quem já adotamos
         </a>
         <button onclick="navigator.share ? navigator.share({title: 'Abrigo Animal', url: location.href}) : undefined"
                 class="flex justify-center items-center rounded-full py-4 px-7 border-[1.5px] border-[#FCFAF3]/48 text-[#FCFAF3] text-base font-medium hover:bg-[#FCFAF3]/10 transition-colors"
