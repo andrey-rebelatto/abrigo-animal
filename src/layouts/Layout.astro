@@ -1,5 +1,7 @@
 ---
 import { Font } from 'astro:assets';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -24,6 +26,8 @@ const { title, description = 'Abrigo animal — adoção, doação, apadrinhamen
     <title>{title}</title>
   </head>
   <body>
+    <Header />
     <slot />
+    <Footer />
   </body>
 </html>
