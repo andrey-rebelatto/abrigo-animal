@@ -33,13 +33,13 @@ O que o novo design corrige:
 
 ## Conteúdo obrigatório
 
-- [ ] Hero curto: "Como prefere falar com a gente?"
-- [ ] Cards de canais (3-4): cada um com ícone, título, descrição curta, canal (WhatsApp/email/tel) e CTA direto.
-- [ ] Endereço + horário de funcionamento + mapa estático (placeholder — mapa real só se vier dentro do escopo).
-- [ ] Formulário geral com campos: nome, e-mail, assunto (select), mensagem.
-- [ ] Nota de privacidade (LGPD).
-- [ ] FAQ curto (3 itens diferentes dos outros FAQs).
-- [ ] Footer institucional.
+- [x] Hero curto: "Como prefere nos encontrar?"
+- [x] Cards de canais: Instagram (canal principal, destaque sage) + Facebook (secundário). WhatsApp e canais adicionais fora do escopo desta versão.
+- [x] Endereço + horário de funcionamento + mapa embed (Google Maps iframe, sem API key).
+- [ ] Formulário geral com campos: nome, e-mail, assunto (select), mensagem. _(descoped — Instagram DM cobre o caso de uso)_
+- [ ] Nota de privacidade (LGPD). _(descoped junto ao formulário)_
+- [ ] FAQ curto (3 itens diferentes dos outros FAQs). _(descoped)_
+- [x] Footer institucional.
 
 ## Estados de interface
 

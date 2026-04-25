@@ -1,0 +1,165 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Contato | Abrigo Animal Joinville"
+  description="Fale com o Abrigo Animal de Joinville. Instagram, Facebook, horários e localização."
+>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-8 pb-12 lg:pt-16 lg:pb-20">
+    <div class="mx-auto max-w-3xl flex flex-col gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#6F8B5A] shrink-0"></span>
+        <span class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+              style="font-family: var(--font-body)">Fale com a gente</span>
+      </div>
+      <h1 class="text-[36px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-5xl"
+          style="font-family: var(--font-display); text-wrap: balance">
+        Como prefere nos encontrar?
+      </h1>
+      <p class="text-[17px] leading-6.5 text-[#2A332F]/78 max-w-xl"
+         style="font-family: var(--font-body); text-wrap: pretty">
+        Nosso canal principal é o Instagram — por lá respondemos DMs, publicamos novidades e histórias de adoção todos os dias.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── CANAIS ────────────────────────────────────────────────────────── -->
+  <section class="bg-[#FCFAF3] px-5 py-12 lg:py-16">
+    <div class="mx-auto max-w-3xl flex flex-col gap-4">
+
+      <!-- Instagram — destaque -->
+      <a href="https://www.instagram.com/abrigoanimaldejoinville/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="group flex flex-col gap-5 rounded-[24px] bg-[#6F8B5A] p-7 hover:bg-[#3A4A34] active:scale-[0.96] transition-[background-color,scale] duration-150 lg:flex-row lg:items-center lg:gap-8 lg:p-8">
+        <!-- Ícone -->
+        <div class="flex items-center justify-center w-14 h-14 rounded-[16px] bg-[#FCFAF3]/18 shrink-0">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="6" stroke="#FCFAF3" stroke-width="2"/>
+            <circle cx="12" cy="12" r="4" stroke="#FCFAF3" stroke-width="2"/>
+            <circle cx="17.5" cy="6.5" r="1.25" fill="#FCFAF3"/>
+          </svg>
+        </div>
+        <!-- Texto -->
+        <div class="flex flex-col gap-1.5 flex-1">
+          <div class="flex items-center gap-2">
+            <span class="text-[11px] font-semibold tracking-[0.14em] uppercase text-[#FCFAF3]/60"
+                  style="font-family: var(--font-body)">Principal canal</span>
+          </div>
+          <p class="text-2xl font-semibold text-[#FCFAF3] tracking-[-0.01em]"
+             style="font-family: var(--font-display)">@abrigoanimaldejoinville</p>
+          <p class="text-[15px] leading-5.5 text-[#FCFAF3]/82"
+             style="font-family: var(--font-body)">DMs, novidades e histórias de adoção — respondemos por aqui todos os dias.</p>
+        </div>
+        <!-- CTA -->
+        <div class="flex items-center gap-2 shrink-0">
+          <span class="text-sm font-semibold text-[#FCFAF3]"
+                style="font-family: var(--font-body)">Abrir Instagram</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"
+               class="transition-transform duration-150 group-hover:translate-x-0.5">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="#FCFAF3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Facebook — secundário -->
+      <a href="https://www.facebook.com/abrigoanimaldejoinville/"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="group flex items-center gap-5 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-6 hover:bg-[#F2EFE8] active:scale-[0.96] transition-[background-color,scale] duration-150 lg:gap-6 lg:p-7">
+        <!-- Ícone -->
+        <div class="flex items-center justify-center w-12 h-12 rounded-[14px] bg-[#3A4A34] shrink-0">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z" fill="#FCFAF3"/>
+          </svg>
+        </div>
+        <!-- Texto -->
+        <div class="flex flex-col gap-1 flex-1">
+          <p class="text-[18px] font-semibold text-[#2A332F] tracking-[-0.01em]"
+             style="font-family: var(--font-display)">/abrigoanimaldejoinville</p>
+          <p class="text-[14px] leading-5 text-[#2A332F]/64"
+             style="font-family: var(--font-body)">Página oficial · Facebook</p>
+        </div>
+        <!-- CTA -->
+        <div class="flex items-center gap-1.5 shrink-0">
+          <span class="text-sm font-semibold text-[#3A4A34]"
+                style="font-family: var(--font-body)">Abrir</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"
+               class="transition-transform duration-150 group-hover:translate-x-0.5">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="#3A4A34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ─── LOCALIZAÇÃO ────────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-12 pb-14 lg:pt-16 lg:pb-20">
+    <div class="mx-auto max-w-3xl flex flex-col gap-8 lg:grid lg:grid-cols-[1fr_1.4fr] lg:gap-12 lg:items-start">
+
+      <!-- Info: endereço + horários -->
+      <div class="flex flex-col gap-6">
+        <div class="flex flex-col gap-2">
+          <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+             style="font-family: var(--font-body)">Onde estamos</p>
+          <h2 class="text-[26px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F]"
+              style="font-family: var(--font-display); text-wrap: balance">
+            Endereço e horários
+          </h2>
+        </div>
+
+        <!-- Endereço -->
+        <address class="not-italic flex flex-col gap-1">
+          <p class="text-[17px] font-semibold text-[#2A332F]"
+             style="font-family: var(--font-display)">Estr. Mário Bächtold, 433-85</p>
+          <p class="text-[15px] text-[#2A332F]/72"
+             style="font-family: var(--font-body)">Joinville — SC, Brasil</p>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Estr.+M%C3%A1rio+B%C3%A4chtold%2C+433-85%2C+Joinville%2C+SC"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="flex items-center gap-1.5 mt-2 text-sm font-semibold text-[#6F8B5A] hover:text-[#3A4A34] underline underline-offset-4 decoration-1 transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Ver rota no Google Maps
+          </a>
+        </address>
+
+        <!-- Horários -->
+        <div class="flex flex-col gap-3">
+          <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+             style="font-family: var(--font-body)">Horário de atendimento</p>
+          <dl class="flex flex-col gap-2">
+            <div class="flex items-baseline justify-between gap-4 py-2.5 border-b border-[#2A332F]/8">
+              <dt class="text-[15px] font-medium text-[#2A332F]" style="font-family: var(--font-body)">Segunda — Sábado</dt>
+              <dd class="text-[15px] text-[#2A332F]/72 shrink-0" style="font-family: var(--font-body)">9h–11h e 14h–17h</dd>
+            </div>
+            <div class="flex items-baseline justify-between gap-4 py-2.5">
+              <dt class="text-[15px] font-medium text-[#2A332F]" style="font-family: var(--font-body)">Domingo</dt>
+              <dd class="text-[15px] text-[#2A332F]/48 shrink-0" style="font-family: var(--font-body)">Fechado</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- Mapa -->
+      <div class="w-full aspect-[4/3] rounded-[20px] overflow-hidden lg:aspect-auto lg:h-[420px]"
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1)">
+        <iframe
+          title="Localização do Abrigo Animal de Joinville"
+          src="https://maps.google.com/maps?q=Estr.+M%C3%A1rio+B%C3%A4chtold%2C+433-85%2C+Joinville%2C+SC%2C+Brazil&output=embed&hl=pt-BR"
+          width="100%"
+          height="100%"
+          style="border: 0; display: block;"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          aria-label="Mapa com a localização do Abrigo Animal de Joinville no bairro próximo à Estr. Mário Bächtold"
+        ></iframe>
+      </div>
+
+    </div>
+  </section>
+
+</Layout>
