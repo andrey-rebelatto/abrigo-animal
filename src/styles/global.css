@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-parchment: #f6f1e7;
-  --color-cream: #fbf7ee;
-  --color-terracotta: #c66b3d;
-  --color-coral: #e89575;
-  --color-clay: #8a4b2b;
-  --color-ink: #2e2a26;
-  --color-moss: #6b7a4e;
-  --color-rust: #a8432a;
+  --color-linen: #f2efe8;
+  --color-warm-white: #fcfaf3;
+  --color-sage: #6f8b5a;
+  --color-sage-muted: #b5c4a6;
+  --color-deep-moss: #3a4a34;
+  --color-ink: #2a332f;
+  --color-honey: #d1a24c;
+  --color-honey-ink: #8e6f24;
 
   /* Font family vars (--font-display, --font-body) are injected by astro:fonts */
 
@@ -19,12 +19,12 @@
 }
 
 html {
-  background-color: var(--color-parchment);
+  background-color: var(--color-linen);
   color: var(--color-ink);
   font-family: var(--font-body);
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  color: var(--color-clay);
+  color: var(--color-ink);
 }
