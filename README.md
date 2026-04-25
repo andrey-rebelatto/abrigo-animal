@@ -83,6 +83,9 @@ Toda alteração de código segue o fluxo abaixo. **Nunca commita direto na `mai
 ```
 abrigo-animal/
 ├── .github/workflows/   # CI (build + check)
+├── docs/
+│   └── design/
+│       └── pages/       # Specs por rota (home, adote, sobre…)
 ├── public/              # Assets estáticos
 ├── src/
 │   ├── content/         # Content Collections (animais, páginas)
@@ -107,3 +110,4 @@ abrigo-animal/
 - [Documentação do Astro](https://docs.astro.build/)
 - [Tailwind CSS](https://tailwindcss.com/docs)
 - [DESIGN.md](./DESIGN.md) — tokens e princípios visuais
+- [docs/design/pages/](./docs/design/pages/) — specs por rota (objetivo, persona, CTAs, conteúdo obrigatório, acessibilidade)
