@@ -1,0 +1,357 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Como Ajudar | Abrigo Animal Joinville"
+  description="Adote, apadrinhe, doe via PIX, Celesc ou materiais, e seja voluntário. Veja todas as formas de ajudar o Abrigo Animal de Joinville."
+>
+
+  <!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-10 pb-12 lg:pt-16 lg:pb-20">
+    <div class="mx-auto max-w-3xl flex flex-col gap-4">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#6F8B5A] shrink-0"></span>
+        <span class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+              style="font-family: var(--font-body)">Abrigo Animal Joinville</span>
+      </div>
+      <h1 class="text-[36px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-5xl"
+          style="font-family: var(--font-display); text-wrap: balance">
+        Cada gesto salva uma vida.
+      </h1>
+      <p class="text-[17px] leading-6.5 text-[#2A332F]/78 max-w-xl"
+         style="font-family: var(--font-body); text-wrap: pretty">
+        Funcionamos 100% com doações e voluntariado. Escolha a forma que faz mais sentido para você — qualquer contribuição chega diretamente aos animais.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─── FORMAS DE AJUDAR ──────────────────────────────────────────────── -->
+  <section class="bg-[#FCFAF3] px-5 pt-12 pb-10 lg:pt-16 lg:pb-14">
+    <div class="mx-auto max-w-7xl">
+
+      <div class="flex flex-col gap-2 mb-8">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">Como ajudar</p>
+        <h2 class="text-[26px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-3xl"
+            style="font-family: var(--font-display)">Cinco formas de fazer a diferença.</h2>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+
+        <!-- 1. Adotar -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-white border border-[#2A332F]/8 p-6">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#6F8B5A] shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.67 0-8-1.34-8-4 0-2.67 5.33-4 8-4s8 1.33 8 4c0 2.66-5.33 4-8 4z" fill="#FCFAF3"/>
+              </svg>
+            </div>
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Adotar um animal</h3>
+          </div>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            Todos os animais são vacinados, castrados e vermifugados. Venha visitar e encontrar seu companheiro — visitas aos sábados e domingos, das 14h às 17h.
+          </p>
+          <a href="/adote"
+             class="flex items-center gap-1.5 pt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Adote seu melhor amigo
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- 2. Apadrinhar -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-white border border-[#2A332F]/8 p-6">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#3A4A34] shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="#FCFAF3"/>
+              </svg>
+            </div>
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Apadrinhar um cão idoso</h3>
+          </div>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            Projeto <strong class="font-semibold text-[#2A332F]/90">Cãofilhado</strong> — R&nbsp;80/mês garantem ração, remédios e calor humano para cães que já passaram dos 7 anos. Preencha a <strong class="font-semibold text-[#2A332F]/90">Ficha de Apadrinhamento</strong> e entregue pessoalmente no Abrigo.
+          </p>
+          <a href="/caofilhado"
+             class="flex items-center gap-1.5 pt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Conhecer o Cãofilhado
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- 3. PIX -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-white border border-[#2A332F]/8 p-6">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#D1A24C] shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M11.5 2C6.81 2 3 5.81 3 10.5S6.81 19 11.5 19h.5v3c4.86-2.34 8-7 8-11.5C20 5.81 16.19 2 11.5 2zm1 14.5h-2v-2h2v2zm0-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2h-2c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z" fill="#FCFAF3"/>
+              </svg>
+            </div>
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Doar via PIX</h3>
+          </div>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72 mb-1"
+             style="font-family: var(--font-body)">
+            Qualquer valor vira ração, vacina ou castração. Emitimos recibo.
+          </p>
+          <dl class="flex flex-col gap-2 rounded-xl bg-[#F2EFE8] px-4 py-3.5 text-[14px]"
+              style="font-family: var(--font-body)">
+            <div class="flex justify-between gap-4">
+              <dt class="text-[#2A332F]/55 shrink-0">Banco</dt>
+              <dd class="font-semibold text-[#2A332F] text-right">Banco do Brasil</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-[#2A332F]/55 shrink-0">Agência</dt>
+              <dd class="font-semibold text-[#2A332F] [font-variant-numeric:tabular-nums]">0038-8</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-[#2A332F]/55 shrink-0">Conta Corrente</dt>
+              <dd class="font-semibold text-[#2A332F] [font-variant-numeric:tabular-nums]">1218398-9</dd>
+            </div>
+            <div class="w-full h-px bg-[#2A332F]/10 my-0.5"></div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-[#2A332F]/55 shrink-0">Chave PIX (CNPJ)</dt>
+              <dd class="font-semibold text-[#2A332F] [font-variant-numeric:tabular-nums]">04.603.573/0001-60</dd>
+            </div>
+            <div class="flex justify-between gap-4">
+              <dt class="text-[#2A332F]/55 shrink-0">Favorecido</dt>
+              <dd class="font-semibold text-[#2A332F] text-right">Associação Abrigo Animal</dd>
+            </div>
+          </dl>
+        </div>
+
+        <!-- 4. Celesc -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-white border border-[#2A332F]/8 p-6">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#B5C4A6] shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M9 11H7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-2M9 11V7a3 3 0 0 1 6 0v4M9 11h6" stroke="#FCFAF3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Doar via Fatura da Celesc</h3>
+          </div>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72"
+             style="font-family: var(--font-body)">
+            Você pode incluir uma doação automática na sua conta de luz. Preencha o <strong class="font-semibold text-[#2A332F]/90">Formulário Celesc</strong> e entregue pessoalmente no Abrigo.
+          </p>
+          <a href="/contato"
+             class="flex items-center gap-1.5 pt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Buscar o formulário no Abrigo
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <!-- 5. Voluntário — ocupa a largura toda em desktop -->
+        <div class="flex flex-col gap-4 rounded-[20px] bg-white border border-[#2A332F]/8 p-6 lg:col-span-2">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#6F8B5A] shrink-0">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="#FCFAF3"/>
+              </svg>
+            </div>
+            <h3 class="text-[20px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+                style="font-family: var(--font-display)">Ser voluntário</h3>
+          </div>
+          <p class="text-[15px] leading-5.5 text-[#2A332F]/72 lg:max-w-xl"
+             style="font-family: var(--font-body)">
+            Passear com os cães, dar banho, acompanhar ao veterinário, fotografar os animais para adoção ou ajudar nas redes sociais. Uma tarde por mês já faz diferença. Entre em contato e nos conte sua disponibilidade.
+          </p>
+          <a href="/contato"
+             class="flex items-center gap-1.5 pt-1 text-sm font-semibold text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+             style="font-family: var(--font-body)">
+            Cadastrar disponibilidade
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DOAÇÃO DE MATERIAIS ───────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-12 pb-14 lg:pt-16 lg:pb-20">
+    <div class="mx-auto max-w-7xl">
+
+      <div class="flex flex-col gap-2 mb-8">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">Doação de materiais</p>
+        <h2 class="text-[26px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-3xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Ração, remédios e produtos de limpeza.
+        </h2>
+        <p class="text-[15px] leading-5.5 text-[#2A332F]/72 max-w-xl mt-1"
+           style="font-family: var(--font-body)">
+          Além das doações financeiras, itens físicos chegam diretamente à rotina dos animais.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+
+        <!-- Ração -->
+        <div class="flex flex-col gap-5 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-10 h-10 rounded-[10px] bg-[#6F8B5A]/15 shrink-0">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M4.5 11h-2v-1l4-4h11l4 4v1h-2v7h-4v-4h-7v4h-4v-7zm2 0h11V8.5H6.5V11z" fill="#6F8B5A"/>
+              </svg>
+            </div>
+            <h3 class="text-[17px] font-semibold text-[#2A332F]"
+                style="font-family: var(--font-display)">Ração para cães e gatos</h3>
+          </div>
+          <p class="text-[14px] leading-5.25 text-[#2A332F]/65 -mt-2"
+             style="font-family: var(--font-body)">
+            Deixe nos estabelecimentos parceiros abaixo — sem precisar ir até o Abrigo.
+          </p>
+          <div class="flex flex-col gap-4">
+
+            <div class="flex flex-col gap-1">
+              <p class="text-[13px] font-semibold text-[#2A332F]" style="font-family: var(--font-body)">AGROPET XV</p>
+              <p class="text-[13px] text-[#2A332F]/60 leading-5" style="font-family: var(--font-body)">
+                Rua XV de Novembro, nº 2654 — Bairro Glória
+              </p>
+              <a href="tel:4730261006"
+                 class="text-[13px] font-medium text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+                 style="font-family: var(--font-body)">(47) 3026-1006</a>
+            </div>
+
+            <div class="w-full h-px bg-[#2A332F]/8"></div>
+
+            <div class="flex flex-col gap-1">
+              <p class="text-[13px] font-semibold text-[#2A332F]" style="font-family: var(--font-body)">CLÍNICA VET. BICHO DE ESTIMAÇÃO</p>
+              <p class="text-[13px] text-[#2A332F]/60 leading-5" style="font-family: var(--font-body)">
+                Av. Marquês de Olinda, nº 1197 — Bairro Costa e Silva
+              </p>
+              <a href="tel:4734353470"
+                 class="text-[13px] font-medium text-[#3A4A34] hover:text-[#6F8B5A] transition-colors w-fit"
+                 style="font-family: var(--font-body)">(47) 3435-3470</a>
+            </div>
+
+            <div class="w-full h-px bg-[#2A332F]/8"></div>
+
+            <div class="flex flex-col gap-1">
+              <p class="text-[13px] font-semibold text-[#2A332F]" style="font-family: var(--font-body)">GIASSI SUPERMERCADOS — AMÉRICA</p>
+              <p class="text-[13px] text-[#2A332F]/60 leading-5" style="font-family: var(--font-body)">
+                Rua Dr. João Colin, nº 762 — Bairro América<br/>
+                Aramado para doações próximo dos caixas.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Remédios -->
+        <div class="flex flex-col gap-5 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-10 h-10 rounded-[10px] bg-[#D1A24C]/15 shrink-0">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M6.5 10h-2v4h2v-4zm3 0h-2v4h2v-4zm3 0h-2v4h2v-4zm3.5 0h-2v4h2v-4zM3 18h18v2H3v-2zm16-14H5c-1.1 0-2 .9-2 2v1h18V6c0-1.1-.9-2-2-2z" fill="#D1A24C"/>
+              </svg>
+            </div>
+            <h3 class="text-[17px] font-semibold text-[#2A332F]"
+                style="font-family: var(--font-display)">Remédios</h3>
+          </div>
+          <p class="text-[14px] leading-5.25 text-[#2A332F]/65 -mt-2"
+             style="font-family: var(--font-body)">
+            Podem ser entregues diretamente no Abrigo:
+          </p>
+          <ul class="flex flex-col gap-2" style="font-family: var(--font-body)">
+            {[
+              'Dipirona 500 mg',
+              'Prednisolona',
+              'Meloxicam',
+              'Carproflan',
+              'Doxiciclina',
+              'Agemoxi CL',
+              'Tramadol',
+              'Dermotrat spray',
+              'Vetaglós pomada',
+              'Solução Otológica',
+              'Vermífugo',
+              'Antipulgas e carrapatos',
+              'Sabonete de clorexidina ou enxofre',
+              'Shampoo antipulgas',
+              'Faixas, gazes, seringas, micropore e soro fisiológico',
+            ].map((item) => (
+              <li class="flex items-start gap-2 text-[13px] text-[#2A332F]/72 leading-5">
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#D1A24C]/60 shrink-0"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Produtos de limpeza -->
+        <div class="flex flex-col gap-5 rounded-[20px] bg-[#FCFAF3] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center gap-3">
+            <div class="flex items-center justify-center w-10 h-10 rounded-[10px] bg-[#3A4A34]/12 shrink-0">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M9.5 6.5v3h-3v-3h3M11 5H5v6h6V5zm-1.5 9.5v3h-3v-3h3M11 13H5v6h6v-6zm6.5-6.5v3h-3v-3h3M19 5h-6v6h6V5zm-6 8h1.5v1.5H13V13zm1.5 1.5H16V16h-1.5v-1.5zM16 13h1.5v1.5H16V13zm-3 3h1.5v1.5H13V16zm1.5 1.5H16V19h-1.5v-1.5zM16 16h1.5v1.5H16V16zm1.5-1.5H19V16h-1.5v-1.5zM19 13h-1.5v1.5H19V13zm-1.5 4.5V19H19v-1.5h-1.5z" fill="#3A4A34"/>
+              </svg>
+            </div>
+            <h3 class="text-[17px] font-semibold text-[#2A332F]"
+                style="font-family: var(--font-display)">Produtos de limpeza</h3>
+          </div>
+          <p class="text-[14px] leading-5.25 text-[#2A332F]/65 -mt-2"
+             style="font-family: var(--font-body)">
+            Podem ser entregues diretamente no Abrigo:
+          </p>
+          <ul class="flex flex-col gap-2" style="font-family: var(--font-body)">
+            {[
+              'Água sanitária',
+              'Herbalvet desinfetante',
+              'Sabão em pó',
+              'Vassouras',
+              'Baldes',
+              'Rodos',
+              'Luvas descartáveis',
+              'Sacos de lixo',
+              'Mantas pet',
+              'Comedouros de alumínio pesado',
+            ].map((item) => (
+              <li class="flex items-start gap-2 text-[13px] text-[#2A332F]/72 leading-5">
+                <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#3A4A34]/50 shrink-0"></span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CLOSING CTA ───────────────────────────────────────────────────── -->
+  <section class="bg-[#6F8B5A] px-6 py-14 lg:py-20">
+    <div class="mx-auto max-w-xl flex flex-col gap-5">
+      <h2 class="text-[30px] leading-9 font-semibold tracking-[-0.02em] text-[#FCFAF3] lg:text-4xl"
+          style="font-family: var(--font-display); text-wrap: balance">
+        Qualquer ajuda<br />chega até eles.
+      </h2>
+      <p class="text-base leading-6 text-[#FCFAF3]/86" style="font-family: var(--font-body)">
+        Não consegue ajudar agora? Compartilhar o site já faz a diferença — alguém da sua rede pode estar pronto para adotar.
+      </p>
+      <div class="flex flex-col gap-2.5 pt-2 lg:flex-row">
+        <a href="/adote"
+           class="flex justify-center items-center rounded-full py-4 px-7 bg-[#FCFAF3] text-[#2A332F] text-base font-semibold hover:bg-white transition-colors"
+           style="font-family: var(--font-body)">
+          Ver quem já adotamos
+        </a>
+        <button
+          onclick="navigator.share ? navigator.share({title: 'Abrigo Animal', url: location.href}) : undefined"
+          class="flex justify-center items-center rounded-full py-4 px-7 border-[1.5px] border-[#FCFAF3]/48 text-[#FCFAF3] text-base font-medium hover:bg-[#FCFAF3]/10 transition-colors"
+          style="font-family: var(--font-body)">
+          Compartilhar esta página
+        </button>
+      </div>
+    </div>
+  </section>
+
+</Layout>
