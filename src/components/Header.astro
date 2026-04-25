@@ -1,9 +1,17 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/logo-abrigo-animal.png';
+---
+
 <header class="sticky top-0 z-50 flex items-center justify-between px-5 py-4 bg-[#F2EFE8]/92 backdrop-blur-sm border-b border-[#2A332F]/8">
-  <a href="/" class="flex flex-col gap-0.5">
-    <span class="text-[10px] font-semibold tracking-[0.16em] uppercase text-[#6F8B5A]"
-          style="font-family: var(--font-body)">Joinville · SC</span>
-    <span class="text-xl font-semibold tracking-[-0.01em] text-[#2A332F]"
-          style="font-family: var(--font-display)">Abrigo Animal</span>
+  <a href="/" class="flex items-center gap-3">
+    <Image src={logo} alt="Logo Abrigo Animal Joinville" width={72} height={72} densities={[1, 2]} class="rounded-full shrink-0" />
+    <span class="flex flex-col gap-0.5">
+      <span class="text-[10px] font-semibold tracking-[0.16em] uppercase text-[#6F8B5A]"
+            style="font-family: var(--font-body)">Joinville · SC</span>
+      <span class="text-xl font-semibold tracking-[-0.01em] text-[#2A332F]"
+            style="font-family: var(--font-display)">Abrigo Animal</span>
+    </span>
   </a>
 
   <!-- Desktop nav -->
