@@ -11,7 +11,7 @@ Em uma frase: o visitante entende que é um abrigo real de Joinville, sente que 
 
 ## CTA primário / secundário
 
-- **Primário**: `Ver quem já encontrou um lar` → `/adote` (página de histórias de adoção)
+- **Primário**: `Adote seu melhor amigo` → `/adote` (página de histórias de adoção)
 - **Secundário**: `Ajudar de outra forma` → `/ajudar`
 
 Hierarquia: histórias de adoção concluída geram confiança e motivam contato. Quem quer adotar entra em contato direto com o abrigo — não existe catálogo de animais disponíveis no site.
