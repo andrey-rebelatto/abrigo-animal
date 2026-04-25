@@ -135,4 +135,9 @@ Protótipos hi-fi em Paper (`file 01KPVE3P8JA2C89JGF7MKWPSVR`):
 - 6 artboards mobile (375px): `/home-mobile`, `/sobre-mobile`, `/adote-mobile`, `/ajudar-mobile`, `/caofilhado-mobile`, `/contato-mobile`
 - Specs por página em `docs/design/pages/*.md`
 
-A logo do abrigo é o nó `NH-0` no Paper — clone via `<x-paper-clone node-id="NH-0" />` em protótipos futuros.
+## Marca
+
+- **Asset oficial**: `src/assets/logo-abrigo-animal.png` (300×300 PNG, RGBA com cantos transparentes). Importado via `astro:assets` em `Header` e `Footer` para servir variantes WebP otimizadas em `srcset` (1x e 2x).
+- **Favicon**: `public/favicon.png` (300×300, mesma fonte). Referenciado em `Layout.astro` como `<link rel="icon" type="image/png">`.
+- **Padrão de uso**: logo + wordmark lado a lado (logo em `rounded-full`, wordmark em Fraunces). A tipografia interna da logo é decorativa — não substitui o wordmark em tamanhos pequenos (≤ 48px).
+- **Referência Paper**: nó `NH-0` no protótipo — clone via `<x-paper-clone node-id="NH-0" />` se for replicar em novos artboards.

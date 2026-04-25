@@ -86,8 +86,10 @@ abrigo-animal/
 ├── docs/
 │   └── design/
 │       └── pages/       # Specs por rota (home, adote, sobre…)
-├── public/              # Assets estáticos
+├── public/              # Assets estáticos servidos verbatim (favicon)
 ├── src/
+│   ├── assets/          # Imagens processadas via astro:assets (logo)
+│   ├── components/      # Header, Footer, etc.
 │   ├── content/         # Content Collections (animais, páginas)
 │   ├── layouts/         # Layouts compartilhados
 │   ├── pages/           # Rotas (file-based routing)
