@@ -1,0 +1,234 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import dog05 from '../assets/dog-03.jpg';
+import dog06 from '../assets/dog-04.jpg';
+import dog07 from '../assets/dog-05.jpg';
+import gatinho03 from '../assets/cat-03.jpg';
+---
+
+<Layout
+  title="Adote um Animal | Abrigo Animal Joinville"
+  description="Adote um cão ou gato do Abrigo Animal de Joinville. Conheça os requisitos, documentos necessários e suas responsabilidades como tutor."
+>
+
+  <!-- ─── HERO ─────────────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-10 pb-0 lg:pt-16">
+    <div class="mx-auto max-w-3xl flex flex-col gap-5 pb-10 lg:pb-12">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#6F8B5A] shrink-0"></span>
+        <span class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+              style="font-family: var(--font-body)">Adoção responsável</span>
+      </div>
+      <h1 class="text-[36px] leading-[1.1] font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-5xl"
+          style="font-family: var(--font-display); text-wrap: balance">
+        Alguém aqui está<br />esperando por você.
+      </h1>
+      <p class="text-[17px] leading-6.5 text-[#2A332F]/78 max-w-xl"
+         style="font-family: var(--font-body); text-wrap: pretty">
+        320 cães e gatos em Joinville aguardam um lar. Cada um com história, personalidade e um coração cheio de amor para dar. Talvez o seu próximo melhor amigo já esteja aqui.
+      </p>
+      <a href="/contato"
+         class="flex items-center gap-2 w-fit px-6 py-3.5 rounded-full bg-[#6F8B5A] text-[#FCFAF3] text-sm font-semibold hover:bg-[#3A4A34] transition-colors"
+         style="font-family: var(--font-body)">
+        Agendar uma visita
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+    <div class="mx-auto max-w-3xl">
+      <div class="w-full aspect-video rounded-t-[20px] overflow-hidden relative"
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08)">
+        <Image src={dog07} alt="Filhote caramelo recém-nascido com olhos arregalados olhando para a câmera"
+               class="absolute inset-0 w-full h-full object-cover object-top" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── POR QUE ADOTAR ───────────────────────────────────────────────── -->
+  <section class="bg-[#FCFAF3] px-5 pt-14 pb-12 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-[2fr_3fr] lg:gap-14 lg:items-center">
+      <div class="w-full aspect-[4/3] rounded-[20px] mb-8 lg:mb-0 relative overflow-hidden"
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08)">
+        <Image src={dog06} alt="Cão branco sorridente com gravata vermelha de bolinhas, olhando para a câmera"
+               class="absolute inset-0 w-full h-full object-cover [object-position:center_20%]" />
+      </div>
+      <div class="flex flex-col gap-4">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">Por que adotar</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Você está adotando<br />uma VIDA.
+        </h2>
+        <p class="text-base leading-6 text-[#2A332F]/78" style="font-family: var(--font-body)">
+          Cada animal que sai daqui carrega uma história de abandono, maus-tratos ou simplesmente azar. Ao adotar, você não está "resgatando" um bicho — está construindo um vínculo para a vida inteira, com todas as responsabilidades que isso envolve.
+        </p>
+        <p class="text-base leading-6 text-[#2A332F]/78" style="font-family: var(--font-body)">
+          Por isso temos um processo de adoção cuidadoso: entrevista, visita domiciliar e acompanhamento pós-adoção. Não para dificultar — para garantir que esse vínculo vai durar.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── REQUISITOS ───────────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-14 pb-12 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-[3fr_2fr] lg:gap-14 lg:items-center">
+      <div class="flex flex-col gap-5 order-2 lg:order-1">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">Requisitos</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Quem pode adotar?
+        </h2>
+        <ul class="flex flex-col gap-3.5">
+          {[
+            'Ter no mínimo 18 anos de idade.',
+            'Demonstrar carinho genuíno pelos animais.',
+            'Residir em imóvel seguro, completamente cercado ou murado — corrente é proibida.',
+            'Para gatos: imóvel com telas protetoras em janelas e portas.',
+            'Ter condições financeiras para arcar com os cuidados do animal.',
+          ].map((item) => (
+            <li class="flex items-start gap-3">
+              <span class="flex items-center justify-center w-5 h-5 rounded-full bg-[#6F8B5A]/16 shrink-0 mt-0.5">
+                <svg width="10" height="10" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 6l3 3 5-5" stroke="#6F8B5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="text-[15px] leading-5.5 text-[#2A332F]/80" style="font-family: var(--font-body)">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="w-full aspect-[4/3] rounded-[20px] mb-8 lg:mb-0 relative overflow-hidden order-1 lg:order-2"
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08)">
+        <Image src={dog05} alt="Cão caramelo usando chapéu de palha e roupa, posando com charme"
+               class="absolute inset-0 w-full h-full object-cover object-center" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── DOCUMENTOS ───────────────────────────────────────────────────── -->
+  <section class="bg-[#FCFAF3] px-5 pt-12 pb-10 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl">
+      <div class="flex flex-col gap-2 mb-8">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">O que trazer</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Três documentos.<br />Nada mais.
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <div class="flex flex-col gap-3 rounded-[20px] bg-[#F2EFE8] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#6F8B5A] shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="#FCFAF3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-[18px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+              style="font-family: var(--font-display)">RG ou CNH</h3>
+          <p class="text-[14px] leading-5 text-[#2A332F]/70" style="font-family: var(--font-body)">
+            Documento de identidade com foto válido.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 rounded-[20px] bg-[#F2EFE8] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#3A4A34] shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0" stroke="#FCFAF3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-[18px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+              style="font-family: var(--font-display)">CPF</h3>
+          <p class="text-[14px] leading-5 text-[#2A332F]/70" style="font-family: var(--font-body)">
+            Cadastro de Pessoa Física, necessário para o Termo de Responsabilidade.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 rounded-[20px] bg-[#F2EFE8] border border-[#2A332F]/8 p-6">
+          <div class="flex items-center justify-center w-11 h-11 rounded-[12px] bg-[#D1A24C] shrink-0">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" stroke="#FCFAF3" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="text-[18px] font-semibold tracking-[-0.01em] text-[#2A332F]"
+              style="font-family: var(--font-display)">Comprovante de Residência</h3>
+          <p class="text-[14px] leading-5 text-[#2A332F]/70" style="font-family: var(--font-body)">
+            Conta de luz, água ou gás recente com seu endereço.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESPONSABILIDADES ────────────────────────────────────────────── -->
+  <section class="bg-[#F2EFE8] px-5 pt-14 pb-12 lg:pt-20 lg:pb-16">
+    <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-[2fr_3fr] lg:gap-14 lg:items-start">
+      <div class="w-full aspect-[4/3] rounded-[20px] mb-8 lg:mb-0 relative overflow-hidden"
+           style="box-shadow: inset 0 0 0 1px rgba(0,0,0,0.08)">
+        <Image src={gatinho03} alt="Gato malhado elegante com gravata borboleta, sentado sobre tecido azul"
+               class="absolute inset-0 w-full h-full object-cover object-top" />
+      </div>
+      <div class="flex flex-col gap-5">
+        <p class="text-xs font-semibold tracking-[0.14em] uppercase text-[#6F8B5A]"
+           style="font-family: var(--font-body)">Suas responsabilidades</p>
+        <h2 class="text-[28px] leading-8 font-semibold tracking-[-0.02em] text-[#2A332F] lg:text-4xl"
+            style="font-family: var(--font-display); text-wrap: balance">
+          Cuidar é para sempre.
+        </h2>
+        <p class="text-[15px] leading-6 text-[#2A332F]/75" style="font-family: var(--font-body)">
+          Ao assinar o Termo de Responsabilidade, você se compromete a oferecer vida plena ao animal adotado. Nossas voluntárias fazem acompanhamento pós-adoção para garantir o bem-estar de cada um.
+        </p>
+        <ul class="grid grid-cols-1 lg:grid-cols-2 gap-2.5">
+          {[
+            'Castração conforme agendamento do abrigo',
+            'Vacinação anual em dia',
+            'Vermifugação a cada seis meses',
+            'Antipulgas e carrapaticida regulares',
+            'Banhos com shampoo adequado',
+            'Consultas veterinárias periódicas',
+            'Espaço limpo com proteção das intempéries',
+            'Portões seguros para evitar fugas',
+            'Passeios com guia — nunca solto',
+            'Abrigo seguro em época de fogos',
+            'Água fresca e alimentação contínuas',
+            'Atenção e afeto cotidianos',
+          ].map((item) => (
+            <li class="flex items-start gap-2.5">
+              <span class="flex items-center justify-center w-4.5 h-4.5 rounded-full bg-[#6F8B5A]/16 shrink-0 mt-0.5">
+                <svg width="9" height="9" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 6l3 3 5-5" stroke="#6F8B5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span class="text-[14px] leading-5 text-[#2A332F]/78" style="font-family: var(--font-body)">{item}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CTA ──────────────────────────────────────────────────────────── -->
+  <section class="bg-[#6F8B5A] px-6 py-14 lg:py-20">
+    <div class="mx-auto max-w-xl flex flex-col gap-5">
+      <h2 class="text-[32px] leading-9 font-semibold tracking-[-0.02em] text-[#FCFAF3] lg:text-5xl"
+          style="font-family: var(--font-display); text-wrap: balance">
+        Venha nos conhecer.
+      </h2>
+      <p class="text-base leading-6 text-[#FCFAF3]/86" style="font-family: var(--font-body)">
+        Agende uma visita, conheça os animais e encontre seu novo companheiro. Não cobramos taxa de adoção — só pedimos responsabilidade e amor.
+      </p>
+      <div class="flex flex-col gap-2.5 pt-2 lg:flex-row">
+        <a href="/contato"
+           class="flex justify-center items-center rounded-full py-4 px-7 bg-[#FCFAF3] text-[#2A332F] text-base font-semibold hover:bg-white transition-colors"
+           style="font-family: var(--font-body)">
+          Agendar visita
+        </a>
+        <button
+          onclick="navigator.share ? navigator.share({title: 'Adote do Abrigo Animal', url: location.href}) : undefined"
+          class="flex justify-center items-center rounded-full py-4 px-7 border-[1.5px] border-[#FCFAF3]/48 text-[#FCFAF3] text-base font-medium hover:bg-[#FCFAF3]/10 transition-colors"
+          style="font-family: var(--font-body)">
+          Compartilhar esta página
+        </button>
+      </div>
+    </div>
+  </section>
+
+</Layout>
