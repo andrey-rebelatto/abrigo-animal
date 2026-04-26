@@ -21,13 +21,14 @@ src/
   content.config.ts
   layouts/
     Layout.astro   # Root layout: injects fonts, Header, Footer, global CSS
-  pages/           # One .astro file per route (index, adote, sobre, contato, ajudar)
+  pages/           # One .astro file per route (index, adote, sobre, contato, ajudar, caofilhado)
   styles/
     global.css     # @theme tokens, base resets
 
 public/            # Served as-is, no processing
   favicon.png
   logo-abrigo-animal.png   # Logo served via plain <img>, bypasses Astro optimization
+  ficha-apadrinhamento.pdf # Sponsorship form for Projeto Cãofilhado — downloadable by visitors
 
 tests/             # Node.js test runner, runs against dist/ after astro build
   *.test.mjs
