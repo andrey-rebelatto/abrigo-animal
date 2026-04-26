@@ -93,6 +93,9 @@ The logo (`public/logo-abrigo-animal.png`) is served via a plain `<img>` tag in 
 
 ## Tests
 
-Tests live in `tests/*.test.mjs` and run with the Node.js built-in test runner against the built output in `dist/`. Each page has its own test file. Tests assert on rendered HTML content — they do not test components, props, or implementation details.
+Tests live in `tests/*.test.mjs` and run with the Node.js built-in test runner against the built output in `dist/`. Tests assert on rendered HTML content — they do not test components, props, or implementation details.
 
-To add tests for a new page, create `tests/<page>.test.mjs` and add it to the `test` script in `package.json`.
+- Page tests: one file per route (e.g. `tests/adote.test.mjs`), reads `dist/<page>/index.html`
+- Shared component tests: `tests/header.test.mjs` reads `dist/index.html` and asserts on markup present in every page (e.g. mobile menu structure, aria attributes)
+
+To add tests, create `tests/<name>.test.mjs` and add it to the `test` script in `package.json`.

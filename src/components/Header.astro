@@ -24,10 +24,91 @@
     </a>
   </nav>
 
-  <!-- Mobile hamburger (decorativo) -->
-  <button class="lg:hidden flex flex-col justify-center items-center w-11 h-11 rounded-full bg-[#2A332F]/6 gap-1.5"
-          aria-label="Menu" aria-expanded="false">
+  <!-- Mobile hamburger button -->
+  <button id="hamburger-btn"
+          class="lg:hidden flex flex-col justify-center items-center w-11 h-11 rounded-full bg-[#2A332F]/6 gap-1.5"
+          aria-label="Abrir menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false">
     <span class="w-4.5 h-0.5 rounded-sm bg-[#2A332F]"></span>
     <span class="w-4.5 h-0.5 rounded-sm bg-[#2A332F]"></span>
   </button>
 </header>
+
+<!-- Overlay -->
+<div id="mobile-overlay"
+     class="fixed inset-0 z-40 bg-[#2A332F]/40 hidden lg:hidden"
+     aria-hidden="true"></div>
+
+<!-- Slide-in drawer -->
+<div id="mobile-menu"
+     class="fixed inset-y-0 right-0 z-50 w-72 bg-[#F2EFE8] shadow-2xl translate-x-full transition-transform duration-300 ease-in-out lg:hidden flex flex-col"
+     aria-label="Menu de navegação">
+  <div class="flex items-center justify-between px-5 py-4 border-b border-[#2A332F]/8">
+    <span class="text-xs font-semibold tracking-[0.16em] uppercase text-[#6F8B5A]"
+          style="font-family: var(--font-body)">Menu</span>
+    <button id="close-btn"
+            class="flex items-center justify-center w-9 h-9 rounded-full bg-[#2A332F]/6 hover:bg-[#2A332F]/12 transition-colors"
+            aria-label="Fechar menu">
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M1 1L11 11M11 1L1 11" stroke="#2A332F" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="flex flex-col px-5 py-6 gap-1" aria-label="Navegação mobile">
+    <a href="/adote"
+       class="py-3.5 text-base font-medium text-[#2A332F] hover:text-[#6F8B5A] border-b border-[#2A332F]/8 transition-colors">
+      Adote
+    </a>
+    <a href="/sobre"
+       class="py-3.5 text-base font-medium text-[#2A332F] hover:text-[#6F8B5A] border-b border-[#2A332F]/8 transition-colors">
+      Sobre
+    </a>
+    <a href="/caofilhado"
+       class="py-3.5 text-base font-medium text-[#2A332F] hover:text-[#6F8B5A] border-b border-[#2A332F]/8 transition-colors">
+      Cãofilhado
+    </a>
+    <a href="/contato"
+       class="py-3.5 text-base font-medium text-[#2A332F] hover:text-[#6F8B5A] border-b border-[#2A332F]/8 transition-colors">
+      Contato
+    </a>
+    <a href="/ajudar"
+       class="mt-5 px-5 py-3 rounded-full bg-[#6F8B5A] text-[#FCFAF3] text-sm font-semibold text-center hover:bg-[#3A4A34] transition-colors">
+      Quero ajudar
+    </a>
+  </nav>
+</div>
+
+<script>
+  const btn = document.getElementById('hamburger-btn')!;
+  const closeBtn = document.getElementById('close-btn')!;
+  const menu = document.getElementById('mobile-menu')!;
+  const overlay = document.getElementById('mobile-overlay')!;
+
+  function openMenu() {
+    menu.classList.remove('translate-x-full');
+    overlay.classList.remove('hidden');
+    btn.setAttribute('aria-expanded', 'true');
+    btn.setAttribute('aria-label', 'Fechar menu');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    menu.classList.add('translate-x-full');
+    overlay.classList.add('hidden');
+    btn.setAttribute('aria-expanded', 'false');
+    btn.setAttribute('aria-label', 'Abrir menu');
+    document.body.style.overflow = '';
+  }
+
+  btn.addEventListener('click', () => {
+    btn.getAttribute('aria-expanded') === 'true' ? closeMenu() : openMenu();
+  });
+
+  closeBtn.addEventListener('click', closeMenu);
+  overlay.addEventListener('click', closeMenu);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+</script>
